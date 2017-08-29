@@ -2,36 +2,36 @@
 <html>
 <head>
 	<title>Article Scraper</title>
-
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">      
+  <script type="text/javascript" src="/javascript/app.js"></script>  
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">   
 </head>
 <body>
-<header>
-	<div class="navbar-fixed">
-	  <nav>
-	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo center">Mongo Article Scraper</a>
-	      <ul class="left hide-on-med-and-down">
-	        <li><a href="/index">Home</a></li>
-	        <li><a href="/saved">Saved Articles</a></li>
-	        <li class="active"><a href="/scrape">Scrape New Articles</a></li>
-	      </ul>
-	    </div>
-	  </nav>	
-	</div>
-</header>
-<main>
+    <header>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Mongo Article Scraper</a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="/index">Home</a></li>
+              <li><a href="/articles">Saved Articles</a></li>
+              <li class="active"><a href="/scrape">Scrape New Articles</a></li>
+            </ul>
+          </div>
+        </nav>  
+      </div>
+    </header>
+    <main>  
 {{{body}}}
-</main>
+        </main>
         <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">

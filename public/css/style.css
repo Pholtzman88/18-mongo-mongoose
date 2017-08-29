@@ -7,4 +7,19 @@
   main {
     flex: 1 0 auto;
   }
-      
+
+  .hidden {
+  	display: none;
+  }
+  .notes{
+  	min-height: 300px;
+  	background-color: white;
+  	margin:30px 10px;
+  }
+  .closeBtn{
+  	float:right;
+  	background-color: transparent;
+  	border:none;
+  	margin-right: 20px;
+  }
+
