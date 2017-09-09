@@ -6,12 +6,12 @@ var Article = require('./../models/Article');
 var request = require("request");
 var router = express.Router();
 
-// mongoose.connect('MONGODB_URI: mongodb://heroku_17pwpftc:9viqgf245um31vif855ccf182m@ds161443.mlab.com:61443/heroku_17pwpftc');
-// var db = mongoose.connection;
+mongoose.connect('MONGODB_URI: mongodb://heroku_17pwpftc:9viqgf245um31vif855ccf182m@ds161443.mlab.com:61443/heroku_17pwpftc');
+var db = mongoose.connection;
 mongoose.Promise = Promise;
 
-mongoose.connect("mongodb://localhost/articles_test");
-var db = mongoose.connection;
+// mongoose.connect("mongodb://localhost/articles_test");
+// var db = mongoose.connection;
 
 db.on("error", function(error) {
   console.log("Mongoose Error: ", error);
@@ -62,11 +62,6 @@ router.get("/scrape", (req,res) => {
 				if (match){
 					console.log(`${article.title} already exists in database`);
 				}else{
-					// var entry = new Article(article);
-					// entry.save((err,doc) => {
-					// 	if (err) throw err;
-					// 	console.log(doc);
-					// });
 					articles.push(article);
 				}
 			});
